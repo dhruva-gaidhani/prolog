@@ -47,7 +47,7 @@ all_perms(User, Perm):-
     all_roles(User, Role),
     rp(Role, Perm).
 
-% Standard len defintion to get the length of a list
+% Standard len definition to get the length of a list
 len([],0).
 
 len([_|Tail], N):-
@@ -64,3 +64,4 @@ authorize_permissions_recur(Perms):-
 % ',' is used to 'and' predicates
 % ';' is used to 'or' predicates
 % '.' is used to terminate predicates 
+% Credits for this code: @adarshdec23
